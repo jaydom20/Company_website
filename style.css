@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-color: #fffdd0;
+  padding: 0;
+  display: block;
+}
+
+main {
+  display: block;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+figcaption {
+  text-align: center;
+  font-size: large;
+  font-weight: bolder;
+}
+.nav-container {
+  display: flex;
+  flex-basis: 100%;
+  margin: 0%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #70957a;
+  padding-bottom: 2px;
+}
+
+#logo {
+  width: 65px;
+  height: 65px;
+  color: white;
+}
+
+.nav-links li {
+  display: inline;
+  justify-content: space-between;
+  margin: 0 15px;
+  font-size: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links li:hover {
+  color: aqua;
+  border-bottom: 5px solid aqua;
+}
+
+.first-image {
+  background-image: url("resources/luxury.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 600px;
+  margin-bottom: 10px;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.consult {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#consult-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  font-weight: 700;
+  width: 50%;
+  /* left: 25%; */
+}
+
+#consult-button:hover {
+  background-color: white;
+  border: 3px solid black;
+  color: black;
+}
+
+#label-consult {
+  color: white;
+  font-size: 42px;
+  margin: 5px 0;
+}
+
+.items {
+  text-align: center;
+}
+
+#butts {
+  margin: 10px 0;
+}
+
+.container-design {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+.item-2-image {
+  background-image: url("resources/living-room-with-mezzanine.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 700px;
+}
+
+.section-articles {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-paragraph {
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-size: medium;
+  text-align: center;
+}
+
+.container-architecture {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 15px;
+  margin-bottom: 50px;
+}
+
+.item-3-image {
+  background-image: url(resources/csm_Headerbild_13_Darley_Rd_0A8A6973_PS_105879a67b.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 100%;
+  height: 700px;
+}
+
+.titles {
+  font-size: 32px;
+  text-align: center;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 90px;
+}
+
+.img-con {
+  width: 250px;
+  height: 250px;
+  box-shadow: 5px 10px;
+}
+
+.a {
+  justify-self: end;
+}
+.b {
+  justify-self: center;
+}
+.c {
+  justify-self: start;
+}
+
+.staff-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 90px 0;
+}
+.staff {
+  width: 200px;
+  height: 200px;
+}
+
+.container-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+  font-weight: lighter;
+  margin-bottom: 70px;
+}
+.review-head {
+  font-size: larger;
+}
+.contact-us {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  text-align: start;
+  margin-left: 100px;
+  /* gap: 10px; */
+}
+.cont {
+  margin-top: 0;
+  font-size: 50px;
+}
+.cont-p {
+  font-weight: 200;
+  font-size: medium;
+}
+.fname-lname {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  gap: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: small;
+}
+.cont-color {
+  color: #504f4f;
+}
+#email {
+  margin-bottom: 20px;
+}
+#submit {
+  background-color: white;
+  border: 1px solid black;
+  width: 90px;
+  height: 40px;
+  font-weight: bold;
+  margin-bottom: 90px;
+}
+
+#submit:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+#comments {
+  margin-bottom: 20px;
+}
+
+.heavy {
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #70957a;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  color: white;
+  padding-bottom: 0;
+}
+.copy {
+  justify-items: center;
+}
+.cont-us {
+  justify-self: end;
+}
