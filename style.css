@@ -31,7 +31,6 @@ figcaption {
 .nav-container {
   display: flex;
   flex-basis: 100%;
-  margin: 0%;
   justify-content: space-between;
   align-items: center;
   background-color: #70957a;
@@ -64,8 +63,9 @@ figcaption {
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 600px;
-  margin-bottom: 10px;
+  height: 1000px;
+  margin: 10px 0;
+
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
@@ -89,7 +89,6 @@ figcaption {
   font-size: 20px;
   font-weight: 700;
   width: 50%;
-  /* left: 25%; */
 }
 
 #consult-button:hover {
@@ -211,7 +210,6 @@ figcaption {
   gap: 100px;
   text-align: start;
   margin-left: 100px;
-  /* gap: 10px; */
 }
 .cont {
   margin-top: 0;
@@ -223,8 +221,8 @@ figcaption {
 }
 .fname-lname {
   display: grid;
-  grid-template-columns: 200px 200px;
-  gap: 20px;
+  grid-template-columns: 180px 160px;
+  gap: 15px;
   margin-bottom: 20px;
   font-weight: 300;
   font-size: small;
@@ -275,4 +273,78 @@ footer {
 }
 .cont-us {
   justify-self: end;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+@media screen and (max-width: 760px) {
+  .nav-links li {
+    font-size: 0.8rem;
+    font-weight: 400;
+    justify-content: flex-start;
+    margin: 1px;
+  }
+  .nav-links {
+    margin-right: 5px;
+  }
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img.a.img-con {
+    margin-bottom: 15px;
+  }
+  img.b.img-con {
+    margin-bottom: 15px;
+  }
+  img.c.img-con {
+    margin-bottom: 15px;
+  }
+  .staff-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+  }
+  div.a {
+    margin-bottom: 15px;
+  }
+  div.b {
+    margin-bottom: 15px;
+  }
+  div.c {
+    margin-bottom: 15px;
+  }
+
+  .container-reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    gap: 0;
+  }
+
+  .cont {
+    font-size: 30px;
+    text-align: center;
+  }
+  .cont-p {
+    text-align: center;
+  }
+  .fname-lname {
+    grid-template-columns: 150px 150px;
+    gap: 40px;
+  }
 }
